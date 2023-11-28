@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+
+    <head>
+        <!-- Metadados -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="CadastroCliente_formulário.css" media="screen">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+        
+
+        <!-- Título da página (aparece na aba) -->
+        <title>Cadastro</title>
+    </head>
+
+    <body>  
+
+        <!-- Cabeçalho com título e subtítulo (ambos com css de id "titulo") -->
+        <div>
+            <h1 id="logo">Petshop</h1> 
+            <br>
+            <hr width = "150%"
+            margin-left = "-53%"
+            >
+            <br>
+            <h1 id="titulo">Realize seu cadastro</h1>
+            <br>
+
+        <!-- Início do formulário -->
+        <form>
+
+            <fieldset class="grupo">
+                <!-- Campo do nome e sobrenome com legenda "nome_sobrenome e css de classe "campo" -->
+                <div class="campo">
+                    <label for="nome"><strong>Nome e sobrenome</strong></label>
+                    <input type="text" name="nome"  placeholder="Digite seu nome e sobrenome" id="nome" required>
+                </div>
+
+            </fieldset>
+            
+        <!-- Campo de email com-->
+        <div class="campo">
+            <label for="email"><strong>Email</strong></label>
+            <input type="email" name="email" id="email" placeholder="Digite seu email" required>
+        </div>
+
+        <!-- Campo de tefelone-->
+
+        <div class="campo">
+            <label for="telefone"><strong>Telefone</strong></label>
+            <input type="tel" name="telefone" id="telefone"  placeholder ="dddXXXXXXXX" 
+            pattern [0-9] {10} required>
+        </div>
+
+    <!-- Campo de escolha de sexo -->
+
+        <div class="campo">
+            <label for="sexo"><strong>Sexo</strong></label>
+            <select id="sexo" required>
+              <option selected disabled value="">Escolha o sexo</option>
+              <option>Feminino</option>
+              <option>Masculino</option>
+            </select>
+        </div> 
+         
+    <!-- Campo para data de nascimento-->
+
+    <div class="campo">
+        <label for="data_nascimento"><strong>Data de nascimento</strong></label>
+        <input type="date" name="data_nascimento" id="data_nascimento" required>
+    </div>
+
+    <!-- Campo para CPF-->
+
+    <div class="campo"> 
+        <label for="cpf"><strong>CPF</strong></label>
+        <input type="number_format" name="cpf" placeholder ="Digite seu CPF" id="cpf" 
+        pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" 
+        title="Digite um CPF no formato: xxx.xxx.xxx-xx">
+        <input type="submit" value="Verificar"  required>
+    </div>
+
+    <!-- Campo para senha-->
+
+    <fieldset class="grupo"> 
+    <div class="campo">
+        <label for="senha"><strong>Senha</strong></label>
+        <input type="password" name="senha" placeholder ="Digite sua senha" id="senha" required> 
+        <i class="bi bi-eye-fill"> </i> 
+        
+    </div>
+
+    <div class="campo">
+        <label for="senha"><strong>Confirme a senha</strong></label>
+        <input type="password" name="senha" placeholder="Confirme sua senha" id="senha" required>
+        <i class="bi bi-eye-fill"> </i> 
+    </div>
+
+   </fieldset>
+
+    </form>
+
+
+
+    
